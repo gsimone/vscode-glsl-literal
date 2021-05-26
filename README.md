@@ -3,6 +3,10 @@ vscode-wgsl-literal
 
 Adds WGSL syntax highlighting for JavaScript template literals.
 
+## Requirements
+
+- Install the [WGSL Extension](https://marketplace.visualstudio.com/items?itemName=PolyMeilex.wgsl)
+
 ## Example
 
 ```js
