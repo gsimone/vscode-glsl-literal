@@ -7,11 +7,13 @@ Adds WGSL syntax highlighting for JavaScript template literals.
 
 ```js
 const vert = /* wgsl */`
-  attribute vec4 aVertexPosition;
-  uniform mat4 uModelViewMatrix;
-  uniform mat4 uProjectionMatrix;
-  void main() {
-    gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
+  struct FragmentInput {
+    [[location(0)]] Color: vec3<f32>;
+  };
+
+  [[stage(fragment)]]
+  fn main(input: FragmentInput) -> [[location(0)]] vec4<f32> {
+    return vec4<f32>(input.Color, 1.0);
   }
 `;
 
