@@ -1,18 +1,12 @@
-vscode-glsl-literal
+vscode-wgsl-literal
 ====================
 
-Adds GLSL syntax highlighting for JavaScript template literals.
-
-## Match on 
-
-```js
-glsl`` | glslify`` | frag`` | vert``
-```
+Adds WGSL syntax highlighting for JavaScript template literals.
 
 ## Example
 
 ```js
-const vert = glsl`
+const vert = /* wgsl */`
   attribute vec4 aVertexPosition;
   uniform mat4 uModelViewMatrix;
   uniform mat4 uProjectionMatrix;
@@ -22,12 +16,3 @@ const vert = glsl`
 `;
 
 ```
-
-## Caveat
-
-If you're not using glslify or another glsl processing library, you will need an identity function named as above to match the syntax.
-
-```js
-const glsl = x => x;
-```
-
