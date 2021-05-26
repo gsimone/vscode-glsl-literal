@@ -2,7 +2,7 @@
   "name": "wgsl-literal",
   "displayName": "wgsl-literal",
   "description": "Syntax highlighting for wgsl inside of JavaScript tagged template strings",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ggsimm",
   "repository": {
     "url": "https://github.com/gsimone/vscode-wgsl-literal.git"
@@ -25,7 +25,7 @@
     "template"
   ],
   "extensionDependencies": [
-    "slevesque.shader"
+    "PolyMeilex.wgsl"
   ],
   "contributes": {
     "grammars": [
