@@ -3,7 +3,7 @@
   "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
-      "begin": "(?i)(\\s?\\/\\*\\s?(wgsl)\\s?\\*\\/\\s?)(`)",
+      "begin": "(?i)(wgsl|\\s?\\/\\*\\s?(wgsl)\\s?\\*\\/\\s?)(`)",
       "beginCaptures": {
         "1": {
           "patterns": [
